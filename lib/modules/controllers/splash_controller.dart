@@ -5,7 +5,7 @@ class SplashController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    // goToMainAfterSeconds();
+    goToMainAfterSeconds();
   }
 
   void goToMainAfterSeconds() {

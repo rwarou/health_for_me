@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: Routes.SPLASH,
       getPages: Pages.pages,
-      defaultTransition: Transition.fade,
-      transitionDuration: const Duration(milliseconds: 100),
+      defaultTransition: Transition.fadeIn,
       themeMode: ThemeMode.dark,
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
