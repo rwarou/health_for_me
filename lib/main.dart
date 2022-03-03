@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:health_for_me/modules/commons/app_colors.dart';
 import 'package:health_for_me/routes/app_pages.dart';
 import 'package:health_for_me/routes/app_routes.dart';
 
@@ -15,8 +16,14 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: Routes.SPLASH,
       getPages: Pages.pages,
+      defaultTransition: Transition.fade,
+      transitionDuration: const Duration(milliseconds: 100),
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColors.black35,
+        ),
+        canvasColor: AppColors.black35,
       ),
     );
   }
