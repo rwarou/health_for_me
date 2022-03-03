@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:health_for_me/modules/commons/text_style.dart';
+import 'package:health_for_me/modules/commons/app_text.dart';
 
 class Splash extends StatelessWidget {
   const Splash({Key? key}) : super(key: key);
@@ -21,10 +21,7 @@ class Splash extends StatelessWidget {
               Container(
                 height: 10,
               ),
-              Text(
-                "HEALTH FOR ME",
-                style: AppTextStyle.appText(),
-              ),
+              AppText.appText("HEALTH FOR ME"),
             ],
           ),
         ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:health_for_me/modules/commons/text_style.dart';
+import 'package:health_for_me/modules/commons/app_text.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -17,10 +17,7 @@ class _HomeState extends State<Home> {
         body: GestureDetector(
           child: Center(
             child: Container(
-              child: Text(
-                "home",
-                style: AppTextStyle.appText(),
-              ),
+              child: AppText.appText("HOME"),
             ),
           ),
           onTap: () {
