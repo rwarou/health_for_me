@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:health_for_me/routes/Pages.dart';
-import 'package:health_for_me/routes/Routes.dart';
+import 'package:health_for_me/routes/app_pages.dart';
+import 'package:health_for_me/routes/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
